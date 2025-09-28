@@ -34,6 +34,35 @@ public class Main {
 	        bell.sound(); 
 	        bell.sound(); 
 	        bell.sound(); 
+	        
+	        System.out.println("-----------------------------------------------------------\n4 Задание:\n");
+	        
+	        OddEvenSeparator separator = new OddEvenSeparator();
+	        
+	        separator.addNumber(1);
+	        separator.addNumber(2);
+	        separator.addNumber(3);
+	        separator.addNumber(4);
+	        separator.addNumber(5);
+	        
+	        separator.even(); 
+	        separator.odd();  
+	        
+	        System.out.println("-----------------------------------------------------------\n5 Задание:\n");
+	        
+	        Table table = new Table(3, 4);
+	        
+	        table.setValue(0, 0, 5);
+	        table.setValue(1, 1, 10);
+	        table.setValue(2, 2, 15);
+	        
+	        System.out.println("Таблица:");
+	        System.out.println(table.toString());
+	        
+	        System.out.println("Значение в ячейке (1,1): " + table.getValue(1, 1));
+	        System.out.println("Количество строк: " + table.rows());
+	        System.out.println("Количество столбцов: " + table.cols());
+	        System.out.println("Среднее арифметическое: " + table.average());
 	}
 	
 }
