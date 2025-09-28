@@ -1,7 +1,11 @@
-
 public class Main {
 	public static void main(String[] args)
 	{
-		System.out.print("hello");
+		int counter = 0;
+		Button button = new Button();
+		
+		button.click();
+		button.click();
+		button.click();
 	}
 }
