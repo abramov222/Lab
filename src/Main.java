@@ -2,6 +2,12 @@ import geometry2d.Circle;
 import geometry2d.Rectangle;
 import geometry3d.Cylinder;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+
 public class Main {
 	public static void main(String[] args)
 	{
@@ -96,6 +102,27 @@ public class Main {
 	        
 	        System.out.println(cylinder2.toString());
 	        System.out.println("Объем цилиндра: " + cylinder2.volume());
+	        
+	        System.out.println("-----------------------------------------------------------\n7 Задание:\n");
+	        
+	        FileAnalyzer analyzer = new FileAnalyzer();
+	        
+	        
+	        analyzer.analyze("C:\\Users\\Student\\eclipse-workspace\\java-labs\\src\\forLab.txt"); // не могу добавить в пакет к main
+	        																					// поэтому полный путь указал
+	   
+	        analyzer.analyze("nonexistent.txt"); // пытаеся проанализировать несущ. файл
+	        
+	        System.out.println("-----------------------------------------------------------\n8 Задание:\n");
+	        
+	        StudentGrades analyzer2 = new StudentGrades();   
+	        
+	       
+	        analyzer2.analyze("C:\\Users\\Student\\eclipse-workspace\\java-labs\\src\\students.txt");
+	        
+	        
+	        System.out.println("Лучший студент: " + analyzer2.bestStudent());
+	        System.out.println("Худший студент: " + analyzer2.worstStudent());
 	}
 	
 }
