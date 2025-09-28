@@ -25,6 +25,15 @@ public class Main {
 	        
 	        balance.addLeft(99);
 	        balance.result(); 
+	        
+	        System.out.println("-----------------------------------------------------------\n3 Задание:\n");
+	        
+	        Bell bell = new Bell();
+	        
+	        bell.sound(); 
+	        bell.sound(); 
+	        bell.sound(); 
+	        bell.sound(); 
 	}
 	
 }
